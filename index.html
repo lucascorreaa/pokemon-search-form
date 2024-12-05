@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Search</title>
-    <link rel="stylesheet" href="/src/styles/reset.css">
-</head>
-<body>
-    <h1>Search Pokemon</h1>
-    <form id="pokemon-form">
-        <label for="pokemon-name">Pokemon Name</label>
-        <input type="text" id="pokemon-name" placeholder="write the name of the pokemon" required>
-        <button type="submit">search</button>
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Pokemon</title>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <img
+      class="pokeball-left pokeball"
+      src="/src/images/pokeball-icon.svg"
+      alt="pokeball-image"
+    />
+    <img
+      class="pokeball-right pokeball"
+      src="/src/images/pokeball-icon.svg"
+      alt="pokeball-image"
+    />
+    <img
+      class="pokedex-img"
+      src="/src/images/pokedex-logo.png"
+      alt="pokedex image"
+    />
+
+    <div class="pokedex-container">
+      <form id="pokemon-form">
+        <input
+          type="text"
+          id="pokemon-name"
+          placeholder="search eg, ditto or pikachu..."
+          required
+        />
+        <button type="submit">
+          <img src="/src/images/search.svg" alt="search icon" />
+        </button>
+      </form>
+    </div>
     <div id="pokemon-info"></div>
     <script src="/src/scripts/search-form.js"></script>
-</body>
+  </body>
 </html>
