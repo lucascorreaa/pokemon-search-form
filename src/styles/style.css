@@ -38,24 +38,24 @@ form {
   justify-content: center;
   align-items: center;
   gap: 12px;
-}
 
-form input {
-  width: 600px;
-  height: 40px;
-  padding: 24px;
-  border-radius: 10px;
-  font-size: 20px;
-}
+  & input {
+    width: 600px;
+    height: 40px;
+    padding: 24px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
 
-form button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff5350;
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
+  & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5350;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
 }
 
 .card {
@@ -70,15 +70,37 @@ form button {
   height: 200px;
   background-color: #ffffff;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+  & img {
+    width: 120px;
+    height: 120px;
+    /* mix-blend-mode: multiply; */
+  }
+
+  & card-aside {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.card img {
-  width: 120px;
-  height: 120px;
-  /* mix-blend-mode: multiply; */
-}
-
-.card card-aside {
+footer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  gap: 10px;
+
+  & a {
+    color: #dd092f;
+  }
+
+  & img {
+    width: 35px;
+    height: 35px;
+    mix-blend-mode: multiply;
+  }
 }
